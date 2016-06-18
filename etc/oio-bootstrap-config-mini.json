@@ -2,6 +2,9 @@
 
 {
     "zookeeper": true,
+    "redis": {
+			"present": true
+	},
 
     "conscience": {
 	"present": true
@@ -16,7 +19,8 @@
     },
 
     "meta2": {
-	"present": true
+	"present": true,
+	"nb-services": 3
     },
 
     "sqlx": {
@@ -24,7 +28,8 @@
     },
 
     "rawx": {
-	"present": true
+	"present": true,
+	"nb-services": 5
     },
 
     "rainx": {

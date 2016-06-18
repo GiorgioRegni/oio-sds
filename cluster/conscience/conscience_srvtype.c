@@ -77,7 +77,7 @@ conscience_srvtype_create(struct conscience_s *conscience, const char *type)
 		g_strlcpy(srvtype->type_name, type, sizeof(srvtype->type_name));
 	srvtype->alert_frequency_limit = 0;
 	srvtype->score_variation_bound = 0;
-	srvtype->lock_at_first_register = TRUE;
+	srvtype->lock_at_first_register = FALSE;
 	srvtype->conscience = conscience;
 	srvtype->services_ring.next = &(srvtype->services_ring);
 	srvtype->services_ring.prev = &(srvtype->services_ring);
